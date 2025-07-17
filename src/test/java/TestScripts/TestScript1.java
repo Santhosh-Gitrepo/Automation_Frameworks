@@ -15,7 +15,7 @@ public class TestScript1
 public void test() throws IOException, InterruptedException
 {
 	TestLogger logger = new TestLogger();
-	WebDriverManager.chromedriver();
+	WebDriverManager.chromedriver().setup();;
 	WebDriver driver = new ChromeDriver();
 	driver.get("https://www.facebook.com");
 	driver.close();
