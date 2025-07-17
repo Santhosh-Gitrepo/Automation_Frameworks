@@ -23,7 +23,7 @@ public void test() throws IOException, InterruptedException
     options.addArguments("--headless");       // Headless mode for Jenkins
     options.addArguments("--disable-gpu");
     options.addArguments("--window-size=1920,1080");
-	WebDriver driver = new ChromeDriver();
+	WebDriver driver = new ChromeDriver(options);
 	driver.get("https://www.facebook.com");
 	driver.close();
 	logger.log("WebPage is Launched and Closed");
